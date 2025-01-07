@@ -1,0 +1,61 @@
+Data types:
+1)Dynamic type language
+Two types:
+1)Primitive data type
+2)Non-Primitive data types:Objects,Arrays
+To check the data type- typeof
+
+1)Primitive data type: predefined ; we can store single values
+->1)Numbers:integers,floats
+->2)String : Stream of characters enclosed in quotes
+----single,double,backtick quotes;
+->3)Boolean:true or false
+->4)Null: empty value or no value
+->5)undefined: declared Variable with no value
+
+
+1)Numbers:
+Eg: 1, -1, 4.4
+
+//let a=1
+        //console.log("hi+a+a")
+        //document.write('hi+a+a',"<br>")
+
+        //document.write(`hi+${a+a}`)
+
+
+2)Strings: Stream of characters enclosed in quotes
+     single,double,backtick quotes;
+    --Back ticks introduced in ES6 version
+    --It provides extra functionality; we can insert 
+
+//let a='sai'
+        //let b='kumar'
+        //let age=30
+        //let c=`I am ${a+' '+b}, my age is ${age} years old.`
+        //document.write(c)
+
+        //let a='sai'
+        //let b='kumar'
+        //let c='Student'
+        //document.write(`ReactJS ${c} = ${a+' '+b}`)
+
+        //let a=null
+        //document.write(a, "<br>")
+        //document.write(typeof(a))
+
+
+Boolean:True or false
+Eg:(35>=30)->True
+
+
+
+-->Condition:An expression that evaluates the results(true or false)
+Console.log(5>4)
+-->Conditional Statement:To make the set instructions execute only when the conditional is True
+-->Block of code(conditional block):Set of instructions
+    >When this block of code will execute it will execute whrn the specific condition is True
+-->Indentation:{
+    ----block of code
+}
+
