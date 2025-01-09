@@ -1,0 +1,83 @@
+Conditional Statements:
+-->To make the set instructions(block of code)(conditional block) execute only when the given condition is True
+-->used to decide whether the code has to be executed or skip based on the given condition
+-->line-line(sequenece)
+
+Block of code:set of instructions
+-->it will execute only when that specific condition is True
+
+Condition:An expression that evaluates an result(True or False)
+Ex:console.log(5>6)
+
+Methods:
+if
+else 
+elseif
+switch
+Ternary operator
+
+if:only one possible condition
+
+
+
+**.html file**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //let a=5
+        //let b=10
+        //if(a>b){
+        //    document.write("Hi,Kowshik","<br>")
+        //}
+        //document.write("Welcome to India")
+
+        //5<10 #True
+        //let a=5
+        //let b=10
+        //if(a<b){
+        //    document.write("Hello,Ram","<br>")
+        //}else{
+        //    document.write("Mahesh","<br>")
+        //}
+        //document.write("Welcome to India")
+
+        //5>10 #False
+        //let a=5
+        //let b=10
+        //if(a>b){
+        //    document.write("Hello,Ram","<br>")
+        //}else{
+        //    document.write("Mahesh","<br>")
+        //}
+        //document.write("Welcome to India")
+
+        //age=prompt("Enter your age:")
+        //name=prompt("Enter your name:")
+        //if(age<18){
+        //    alert(name+" you are to young to marry")
+        //}else if(age>35){
+        //    alert(name+" you are to old to marry")
+        //}else{
+        //    alert(name+" age is perfect to marry")
+        //}
+        //alert("Welcome to India")
+
+
+        let A=100
+        let B=320
+        let C=A+B
+        if(A>300 || B<300 && C<500){
+            document.write("Can Team up")
+        }else{
+            document.write("Cannot Team up")
+        }
+    </script>
+</body>
+</html>
