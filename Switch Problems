@@ -1,0 +1,94 @@
+
+Switch:
+Syntax:
+switch(variable/expression){
+    case value 1:
+    ///block of code for case 1
+    break;
+    case value 2:
+    ///block of code for case 2
+    break;
+    defeault:
+    ///block of code
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let num=parseInt(prompt("Enter the number: "))
+        //switch(true){
+        //    case num>0:
+        //        document.write("Number is positive")
+        //        break;
+        //    case num==0:
+        //        document.write("Number is zero")
+        //        break;
+        //    case num<0:
+        //        document.write("Number is negative")
+        //        break;
+        //    default:
+        //        document.write("Number is Invalid")
+        //}
+
+        let day=prompt("Enter a day: ")
+        switch(true){
+            case day=="monday":
+            document.write("weekday")
+            break;
+            case day=="tuesday":
+            document.write("weekday")
+            break;
+            case day=="tuesday":
+            document.write("weekday")
+            break;
+            default:
+            document.write("Invalid input")
+        }
+
+
+/*
+let a=parseInt(prompt("Enter the number of units: "))
+        switch(true){
+            case a>0 && a<51:
+            let b=  a*2;
+            document.write(b + (b*0.2));
+            break;
+            case a>=51 && a<151:
+            let c = (50*2) +((a-50)*3);
+            document.write(c + (c*0.2));
+            break;
+            case a>150 && a<251:
+            let d=  (50*2)+(100*3)+((a-150)*5);
+            document.write(d + (d*0.2));
+            break;
+            case a>250:
+            let e=  (50*2)+(100*3)+(100*5)+((a-250)*8);
+            document.write(e + (e*0.2));
+            break;
+            default:
+            alert("Invalid input")
+        }
+*/
+
+/*
+<script>
+        let a=parseInt(prompt("Enter the number: "))
+        let b=a*(a-1)/2
+        document.write("The number of handshake made by students: "+b)
+    </script>
+*/
+
+    </script>
+</body>
+</html>
+
+
+
