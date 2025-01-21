@@ -1,0 +1,84 @@
+While(condition){
+    //Block of code
+}
+1)cond inside the ()
+2){}
+3)false  #
+
+do while:
+Syntax:
+    do{
+        //Block of code
+    }while(condition)
+
+#false
+
+
+Break, continue:
+
+Matches it will stop
+Example:
+for(let i=1;i<=5;i=i+1){
+    if(i==3){
+        break;
+    }console.log(i)
+}
+
+#1-5
+#i=1,2
+
+
+
+
+//////loop1.html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //const arr=["Ram","Kavya","Mahesh"]
+        //for(let a of arr){
+        //    console.log(a)
+        //}
+
+
+        //const a="ramya"
+        //for(let i in a){
+        //    document.write(a[i],"<br>")
+            
+        //}
+
+        //let a=1
+        //let b=8
+        //while(a<=b){
+        //    console.log(a)
+        //    a=a+2
+        //}
+
+
+        //let a=2
+        //let b=10
+        //do{
+        //    console.log(a+1)
+        //    a=a+3;
+        //}while(a<=b)
+
+
+        //let n=8
+        //for(let i=1;i<=n;i=i+2){
+        //    if(i==4){
+        //        break;
+        //    }
+        //    console.log(i)
+        //}
+
+
+        
+    </script>
+</body>
+</html>
