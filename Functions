@@ -1,0 +1,84 @@
+Functions:
+->A function is reusable block of code
+->It can be call anywhere in the program
+----Reusable code:using an existing code with out writing it ever we need
+-You can use the same code with different arguments to get the results
+
+JS:
+Key word = function
+( )
+Parameters=values which are declared inside the () while defining a Functions
+Arguments:values which are passed through the Parameters
+
+function return:
+->The return statement can be used to return a value to function call
+Example:
+function a(aa,bb){
+    return aa+bb;
+}
+let n1=parseFloat(prompt("Enter a number1))
+let n2=parseFloat(prompt("Enter a number2"))
+let result=a(n1,n2);
+
+Anonymous function:
+->A function without name ,After we create a function without name and we assign it to a variable
+
+
+
+*****function.html*******
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function greeting(){
+        //    document.write("Hello Maahesh","<br>")
+        //}
+        //document.write("Hi,Saicharan","<br>")
+        //greeting()
+        //document.write("Hello, Ravi")
+
+        //function g(name){
+        //    document.write("Hello, "+name);
+        //}
+        //let name=prompt("Enter your name:")
+        //g(name)
+
+        //function AddOfTwo(a,b,c){
+        //    document.write("The sum is :"+c);
+        //}
+        //let a=parseFloat(prompt("Enter the first number:"));
+        //let b=parseFloat(prompt("Enter the second number:"));
+        //let c=a+b;
+        //AddOfTwo(a,b,c)
+
+        //function ret(aa,bb){
+        //    return aa+bb;
+        //}
+        //let n1=parseFloat(prompt("Enter the number1:"))
+        //let n2=parseFloat(prompt("Enter the number2:"))
+        //let result=ret(n1,n2);
+        //document.write("The sum is:"+result)
+
+        //sum=function(n1,n2){
+        //    let r=n1+n2;
+        //    return r;
+        //}
+        //document.write(sum(182,234))
+
+        function AddOfTwo(a,b,c){
+            document.write("The sum is :"+c);
+        }
+        let a=parseFloat(prompt("Enter the first number:"));
+        let b=parseFloat(prompt("Enter the second number:"));
+        let c=a+b;
+        AddOfTwo(a,b,c)
+        
+    </script>
+</body>
+</html>
