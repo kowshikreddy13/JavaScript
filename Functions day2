@@ -1,0 +1,145 @@
+Arrow functions:
+-->Es6 version
+-->more readable and more structure
+-->anonymous functions(lambda functions)
+-->without function name but they are assigned to a variable
+
+Example:
+-->Arrow functions without Parameters
+let c=()=>{
+    console.log("Hello");
+}
+
+-->Arrow functions with Parameters
+let d=(a,b)=>{
+    console.log(a+b);
+}
+d(20,32)
+
+Arrow function with one arguments
+#without using parenthesis
+let greet=x=>console.log(x);
+greet('hello')
+
+Arrow function without arguments
+let greet=()=>console.log('hello');
+greet()
+
+Example:Arrow functions as an expression
+let 18;
+let welcome=(age<18)?
+()=>console.log('Hi Ravi'):
+()=>console.log('Hi kiran');
+welcome()
+
+Synchronous and Asynchronous functions:
+-->step by step
+--> one task
+
+Asynchronous functions:
+-->multiple tasks at a time
+
+
+JavaScript callbacks:
+-->A callback function is a function passed as an argument to another function
+
+
+Promise:
+-->eventual completion
+Three states
+1)Pending    == still not completed --continuing
+2)Fulfilled  == task completed
+3)Rejected   == The operation is failed
+
+
+******Arrowfun.html******
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Arrow functions without Parameters*/
+
+        //let First=()=>{
+        //    document.write("Hi Mahesh")
+        //}
+        //First()
+
+        /*Arrow functions with Parameters*/
+
+        //let Second=(a,b)=>{
+        //    document.write(a+b);
+        //}
+        //Second(23,24)
+
+
+        /*Arrow functions with one argument*/
+
+        //let Third=a=>{
+        //    document.write(a+a);
+        //}
+        //Third(34)
+
+        /*Arrow functions as an expression*/
+        //let age=17;
+        //let welcome=(age<18)?
+        //()=>{document.write("Hi Ravi")}:()=>{document.write("HI KIRAN")};
+        //    welcome()
+
+        /*Synchronous and Asynchronous Functions*/
+        function task1(){
+            document.write("task1 started","<br>");
+        }
+        function task2(){
+            document.write("task2 started","<br>");
+        }
+        function task3(){
+            document.write("task3 started");
+        }
+        task1();
+        task2();
+        task3();
+
+        document.write("<br>")
+        document.write("<br>")
+
+        //document.write("Hi Computer","<br>")
+        //setTimeout(() =>{
+        //    document.write("Hi I am waiting")
+        //},6000);
+        //document.write("I am in lab")
+
+        /*Callback Functions*/
+
+        function call(name , callback){
+            document.write(`Hello,${name}!`,"<br>");
+            callback();
+            //this calls the callback function after call
+        }
+        function first(){
+            document.write("I am first function");
+        }
+        //call call and pass first function as the callback
+        call("Callback",first)
+
+        document.write("<br>")
+        document.write("<br>")
+
+        /*Promise*/
+
+        let Firstpromise=new Promise((resolve , reject)=>{
+            let success=true;
+            if(success){
+                resolve("Task completed");
+            }else{
+                reject("Task failed");
+            }
+        })
+    </script>
+</body>
+</html>
