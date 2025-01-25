@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function call(name , callback){
+            //call function takes the parameters
+            document.write(`Hello,${name}!`,"<br>");
+            callback();
+            //this calls the callback function after call
+        }
+        function first(){
+            document.write("I am first function");
+        }
+        //call call and pass first function as the callback
+        call("Callback",first)
+
+        document.write("<br>")
+        document.write("<br>")
+
+        function second(name,callback){
+            document.write(`This is ${name} function`,"<br>");
+            callback();
+        }
+        function welcome(){
+            document.write("Welcome to my home");
+        }
+        second("Anonymous",welcome)
+
+        document.write("<br>")
+        document.write("<br>")
+
+        //Asynchronous callback with setTimeout
+
+        //function fetchdata(callback){
+        //    document.write("Fetching data.........");
+        //    setTimeout(function(){
+        //        document.write("Data fetched","<br>");
+        //        callback();
+        //    },4000)
+        //}
+        //function processData(){
+        //    document.write("Processing the fetched data.........");
+        //}
+        //fetchdata(processData)
+
+        document.write("<br>")
+        document.write("<br>")
+
+        //using a callback with array methods(map)
+
+        const numbers = [1,2,3,4,5];
+        const d=numbers.map(function(num){
+            return num*2;
+        })
+        document.write(d)
+        //map() is a built in array method that callback function to process each element of the array
+        //The callback here doubles each number (num*2) and returns the new array with the doubled numbers
+
+        document.write("<br>")
+        document.write("<br>")
+        
+        //User registration scenario based on callback:
+        function registerUser(username,email,callback){
+            document.write("Registering user "+username,"<br>");
+            setTimeout(function(){
+                document.write("User "+username+" registered successfully","<br>");
+                callback(email);
+            },3000)
+        }
+        function sendWelcomeEmail(email){
+            document.write("Sending verification email to "+email,"<br>");
+        }
+        registerUser("Kiran","Kiran3242@gmail.com",sendWelcomeEmail)
+    </script>
+</body>
+</html>
