@@ -1,0 +1,91 @@
+Promise:
+-->eventual completion
+-->It allows to handle Asynchronous tasks more efficiently than callbacks
+Three states
+1)Pending    == still not completed --continuing; The initial state, the promise is still waiting for the operation to finish.
+2)Fulfilled  == task completed successfully
+3)Rejected   == The operation is failed
+
+Exp:
+1)To create a promise -new promise()
+Two Parameters-
+resolve -- to mark the promise as successfully
+reject -- to mark the promise as failed
+
+2)To handle the result -
+.then() method is called when promise is fulfilled.
+It will recevies the result from resolve()
+.catch() method is called when promise is rejected.
+It will receive the error from reject()
+
+
+
+
+*******promiseee.html********
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let mypromise = new Promise((resolve,reject) =>{
+        //    let success=true;
+        //    if(success){
+        //        resolve("The operation is successful");
+        //    }else{
+        //        reject("The operation failed");
+        //    }
+        //});
+        //mypromise.then((result) => {
+        //    document.write(result);
+        //})
+        //.catch((error)=>{
+        //    document.write(error);
+        //});
+
+        
+
+        //Chaining promises:
+
+        //let promise1 = new Promise((resolve,reject) =>{
+        //    resolve(5);
+        //})
+        //promise1.then(result =>{
+        //    document.write(result,"<br>");
+        //    return result*2;
+        //    //return a new value
+        //})
+        //.then(result =>{
+        //    document.write(result,"<br>");
+        //    return result + 3;
+        //    //return a new value
+        //})
+        //.then(result =>{
+        //    document.write(result,"<br>");
+        //})
+        //.catch(error =>{
+        //    document.write("Error ",error);
+        //})
+
+        
+        //Promise with setTimeout
+
+        let promise2 = new Promise((resolve,reject) =>{
+            setTimeout(() =>{
+                resolve("The operation is successfull");
+            },3000)
+        });
+        promise2.then(result =>{
+            document.write(result);
+        })
+        .catch(error =>{
+            document.write("Error",error)
+        })
+        document.write("The operation is.....")
+    </script>
+</body>
+</html>
