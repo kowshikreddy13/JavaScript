@@ -1,0 +1,105 @@
+Methods of Document Objects:
+-->used to interact with and manipulate the document.
+Getting Element:
+1)Getting Element by Id : id=a single element, returns the element with the specified id.
+2)Getting Element by Class : class = group ; 
+3)Getting Element by Tag : 
+4)Getting Element by using queryselector method: 
+
+getElementByClassName();
+-->returns all the elements having the same class name
+-->returns an html collection object ;An html collection is a collection of nodes that can be accessed by index or by name.
+-->It is an array of html elements.
+
+Getting elements by Tagname:
+getElementByTagName():
+-->This method takes a tag name as string and returns an HTML collection object
+-->each element loop
+
+Getting Element by using queryselector method: 
+-->The document query selector method select an HTML elements by tagname, by id, class name.
+-->queryselector():can be used to select HTML element by its tagname, by id, class name; first matching element is returned.
+
+-queryselectorAll():
+-->it selects all the html elements by its class name and tagname.
+
+>Manipulating Elements:
+->To create HTML Elements:
+createElement() - create a new element
+    method - document.createElement()
+
+textContent:
+
+
+
+*********domday2.html*********
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="a">I am sai</h1>
+    <h1 id="b">I am sam</h1>
+    <h1 id="c">I am ravi</h1> -->
+
+
+    <!-- <h1 id="a" class="a">Iam sai</h1>
+    <h1 id="b" class="b">I am sam</h1>
+    <h1 id="c" class="a">I am ravi</h1>
+    <h1 class="b">I am kavya</h1> -->
+
+    <!-- <h1 id="a" class="a">Iam sai</h1>
+    <h2 id="b" class="b">I am sam</h1>
+    <h1 id="c" class="a">I am ravi</h1>
+    <h2 class="b">I am kavya</h1> -->
+
+    <!-- <h1 id="a" class="a">Iam sai</h1>
+    <h2 id="b" class="b">I am sam</h1>
+    <h1 id="c" class="a">I am ravi</h1>
+    <h2 class="b">I am kavya</h1> -->
+    <script>
+        //let x=document.getElementById("a")
+        //console.log(x)
+
+        //let x=document.getElementsByClassName("a")
+        //console.log(x);
+
+        //let x=document.getElementsByTagName("h1")
+        //console.log(x);
+        //for(let i=0;i<x.length;i++){
+        //    console.log(x[i])
+        //}
+
+        //let x=document.querySelector("h1")
+        //console.log(x);
+
+
+        //let x=document.querySelectorAll("h1")
+        //console.log(x);
+        //for(let i=0;i<x.length;i++){
+        //    console.log(x[i])
+        //}
+
+        /* Create an element*/
+
+        //let s=document.createElement('h2')
+        //s.className="ss"
+        //s.textContent="I am John"
+        //console.log(s)
+        //document.body.appendChild(s)
+
+        const s=["harini","suresh","rohini"]
+        for(i=0;i<s.length;i++){
+            let s1=document.createElement('h2')
+            s1.className="ss"
+            s1.textContent=s[i]
+            //console.log(s[i]);
+            console.log(s1)
+        }
+    </script>
+</body>
+</html>
