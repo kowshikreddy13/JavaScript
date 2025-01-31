@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1 id="q">Ramya</h1>
+        <h1 id="r">Ram</h1>
+    </div>
+    <div id="b">
+        <h1>Ravi</h1>
+        <h1>Sam</h1>
+    </div>
+    <script>
+        /*InsertBefore(): insert a new node before an existing node or child node of a specific parent node.
+        --this requires a reference to both the new node and the existing node you want to insert before.*/
+
+        //let n=document.createElement("h2")
+        //n.textContent="Rahul"
+        /*insert the new element before the element with id "r"*/
+        //let p=document.getElementById("a")
+        //console.log(p.innerText)
+        //let l=document.getElementById("r")
+        //p.insertBefore(n , l)
+        //console.log(p.innerText)
+
+
+        //let n=document.createElement("h2")
+        //n.textContent="Kowshik"
+        //let p=document.getElementById("a")
+        //let l=document.getElementById("q")
+        //p.insertBefore(n,l)
+        //console.log(p.innerText)
+
+
+        ////to insert Kowshik before Ramya
+        //let n=document.createElement("h2")
+        //n.textContent="Kowshik"
+        //let p=document.getElementById("a")
+        //let l=document.getElementById("q")
+        //p.insertBefore(n,l)
+        //console.log(p.innerText)
+        ////to insert Mahesh before Ram
+        //let nn=document.createElement("h2")
+        //nn.textContent="Mahesh"
+        //let pp=document.getElementById("a")
+        //let ll=document.getElementById("r")
+        //p.insertBefore(nn,ll)
+        //console.log(pp.innerText)
+
+
+        /*To remove an element*/
+
+        //let n=document.getElementById('b')
+        //n.remove()
+
+
+        /*To remove an child element
+        removeChild()*/
+
+        //let w=document.getElementById('a')
+        //let e=document.getElementById('q')
+        //console.log(w.innerText)
+        //w.removeChild(e)
+        //console.log(w.innerText)
+
+
+        /*To replace an element*/
+
+        let ll=document.createElement('h1')
+        ll.textContent="Mahesh"
+        let p=document.getElementById('a')
+        console.log(p.innerText)
+        p.replaceChild(ll)
+        console.log(p.innerText)
+
+        //let ll=document.createElement('h1')
+        //ll.textContent="Mahesh"
+        //let p=document.getElementById('a')
+        //let l=document.getElementById('q')
+        //console.log(p.innerText)
+        //p.replaceChild(ll,l)
+        //console.log(p.innerText)
+
+
+    </script>
+</body>
+</html>
