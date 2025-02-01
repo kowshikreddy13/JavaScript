@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let a=prompt("Enter the age:")
+        //let c=prompt("Enter the citizen")
+        //let b=prompt("Enter the citizenship test:")
+        //if(a==18 &&(c=="Indian" || b==True) ){
+        //    alert("You are eligible to vote")
+        //}else if(a>18 &&(c=="Indian" || b==True)){
+        //    alert("You are eligible to vote")
+//
+        //}else{
+        //    alert("You are not eligible to vote")
+        //}
+
+
+        //let aa=prompt("Enter the money spend: ");
+        //let bb=prompt("Enter the member: ");
+        //if(aa<100 || (aa<100 && bb!="Premium")){
+        //    document.write(aa-(aa*0.2));
+        //}else if(aa<100 || (aa<100 && bb=="Premium")){
+        //    document.write(aa-(aa*0.2*0.05))
+        //}
+        //}else if((aa>50 && aa<=100) || bb=="Premium"){
+         //   document.write(aa*0.1)
+        //}
+
+
+
+
+    </script>
+</body>
+</html>
